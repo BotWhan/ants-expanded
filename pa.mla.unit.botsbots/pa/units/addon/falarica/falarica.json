@@ -1,0 +1,144 @@
+{
+    "display_name": "Falarica",
+    "description": "Jump Trooper. Armored, Powerful, Shortranged. Can Jump",
+    "TEMP_texelinfo": 4.07719,
+    "wreckage_health_frac":0.0,
+    "attachable": {
+      "offsets": {
+        "root": [
+          0,
+          0,
+          0
+        ],
+        "head": [
+          0,
+          0,
+          3.5
+        ]
+      }
+    },
+    "audio": {
+      "loops": {
+        "move": {
+          "cue": "/SE/Movement/bot/assault_loop",
+          "flag": "vel_changed",
+          "should_start_func": "is_moving",
+          "should_stop_func": "is_not_moving"
+        }
+      },
+      "selection_response": {
+        "cue": "/SE/Selection/bot/assault"
+      }
+    },
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "build_metal_cost": 1000,
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Attack",
+        "ORDER_Assist",
+        "ORDER_Use",
+        "ORDER_FireSecondaryWeapon"
+      ],
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/bot"
+      },
+      "fired": {
+        "audio_cue": "/SE/Weapons/bot/assault_fire",
+        "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle_right /pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle_left"
+      }
+    },
+    "guard_layer": "WL_AnySurface",
+    "max_health": 2000,
+    "mesh_bounds": [
+      4,
+      2,
+      4
+    ],
+    "model": {
+      "filename": "/pa/units/addon/falarica/falarica.papa",
+      "animations": {
+        "walk": "/pa/units/addon/falarica/falarica_walk.papa",
+        "idle": "/pa/units/addon/falarica/falarica_idle.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json",
+      "walk_speed": 8
+    },
+    "navigation": {
+      "type": "land-small",
+      "acceleration": 80,
+      "brake": -1,
+      "move_speed": 12,
+      "turn_speed": 180
+    },
+    "physics": {
+      "radius": 8
+    },
+    "recon": {
+      "observer": {
+        "items": [
+          {
+            "layer": "surface_and_air",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 110
+          },
+          {
+            "layer": "underwater",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 110
+          },
+          {
+            "layer": "surface_and_air",
+            "channel": "radar",
+            "shape": "capsule",
+            "radius": 200,
+            "uses_energy": false
+          },
+          {
+            "layer": "underwater",
+            "channel": "radar",
+            "shape": "capsule",
+            "radius": 200,
+            "uses_energy": false
+          }
+        ]
+      }
+    },
+    "selection_icon": {
+      "diameter": 10.0
+    },
+    "tools": [
+      {
+        "spec_id": "/pa/units/addon/falarica/falarica_tool_weapon.json",
+        "projectiles_per_fire": 4,
+        "aim_bone": "bone_turret",
+        "muzzle_bone": [
+          "socket_muzzle_left_left",
+          "socket_muzzle_left_right",
+          "socket_muzzle_right_left",
+          "socket_muzzle_right_right"
+        ]
+      },
+      {
+        "aim_bone": "bone_turret",
+        "secondary_weapon": true,
+        "spec_id": "/pa/units/addon/falarica/falarica_jump_tool_weapon.json",
+        "muzzle_bone": "socket_muzzle_right_right"
+      }
+    ],
+    "transportable": {
+      "size": 1
+    },
+    "unit_types": [
+      "UNITTYPE_Bot",
+      "UNITTYPE_Mobile",
+      "UNITTYPE_Offense",
+      "UNITTYPE_Land",
+      "UNITTYPE_Advanced",
+      "UNITTYPE_FactoryBuild",
+      "UNITTYPE_CannonBuildable"
+    ]
+  }
