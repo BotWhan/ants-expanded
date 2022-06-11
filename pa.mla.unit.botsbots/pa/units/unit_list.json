@@ -206,16 +206,72 @@
 		
         "/pa/units/addon/double_ant/double_ant.json",
 		
-        "/pa/units/addon/car/car.json",
+		"/pa/units/addon/anti_air_ant/anti_air_ant.json",
+		
+		"/pa/units/addon/strong_ant/strong_ant.json",
+		
+		"/pa/units/addon/grenadier_ant/grenadier_ant.json",
+		
+		"/pa/units/addon/bomber_ant/bomber_ant.json",
+		
+		"/pa/units/addon/titan_cannon_ant/titan_cannon_ant.json",
+		
+		"/pa/units/addon/flying_ant/flying_ant.json",
+		
+		"/pa/units/addon/not_flying_ant/not_flying_ant.json",
+		
+		"/pa/units/addon/gatling_ant/gatling_ant.json",
+		
+		"/pa/units/addon/shotgun_ant/shotgun_ant.json",
+		
+		"/pa/units/addon/honey_pot_ant/honey_pot_ant.json",
+		
+		"/pa/units/addon/long_ant/long_ant.json",
+		
+		"/pa/units/addon/thicc_ant/thicc_ant.json",
+		
+		"/pa/units/addon/poilus/poilus.json",
+		
+		"/pa/units/addon/thumper/thumper.json",
+		"/pa/units/addon/thumper_adv/thumper_adv.json",
+        
+		
+		"/pa/units/addon/tree_base/tree_base.json",
+		
+		"/pa/units/addon/tree_base_energy/tree_base_energy.json",
+		"/pa/units/addon/tree_base_energy_build/tree_base_energy_build.json",
 
-        "/pa/units/addon/thumper/thumper.json",
+		"/pa/units/addon/tree_hardpoint_base_build/tree_hardpoint_base_build.json",
+		"/pa/units/addon/tree_hardpoint_base/tree_hardpoint_base.json",
 
-		"/pa/units/addon/javelin/javelin.json",
-		
-		"/pa/units/addon/falarica/falarica.json",
-		
-		"/pa/units/addon/hierophant/hierophant.json",
-		
-		"/pa/units/addon/sokol_carrier/sokol.json"
+        "/pa/units/addon/tier_1_machine_gun/tier_1_machine_gun.json",
+		"/pa/units/addon/tier_1_machine_gun_build/tier_1_machine_gun_build.json",
+    
+		"/pa/units/addon/tier_2_machine_gun/tier_2_machine_gun.json",
+		"/pa/units/addon/tier_2_machine_gun_build/tier_2_machine_gun_build.json",
+
+        "/pa/units/addon/tier_2_gatling/tier_2_gatling.json",
+		"/pa/units/addon/tier_2_gatling_build/tier_2_gatling_build.json",
+
+        "/pa/units/addon/tier_1_cannon/tier_1_cannon.json",
+		"/pa/units/addon/tier_1_cannon_build/tier_1_cannon_build.json",
+
+        "/pa/units/addon/tier_2_auto_cannon/tier_2_auto_cannon.json",
+		"/pa/units/addon/tier_2_auto_cannon_build/tier_2_auto_cannon_build.json",
+
+        "/pa/units/addon/tier_3_machine_gun/tier_3_machine_gun.json",
+		"/pa/units/addon/tier_3_machine_gun_build/tier_3_machine_gun_build.json",
+
+        "/pa/units/addon/tier_3_beamer/tier_3_beamer.json",
+		"/pa/units/addon/tier_3_beamer_build/tier_3_beamer_build.json",
+
+        
+        "/pa/units/addon/tree_rocket_base/tree_rocket_base.json",
+		"/pa/units/addon/tree_rocket_base_build/tree_rocket_base_build.json",
+
+        
+        "/pa/units/addon/tier_1_rocket/tier_1_rocket.json",
+		"/pa/units/addon/tier_1_rocket_build/tier_1_rocket_build.json"
     ]
+    
 }
