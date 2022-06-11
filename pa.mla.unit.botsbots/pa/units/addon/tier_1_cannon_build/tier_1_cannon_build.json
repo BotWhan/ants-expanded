@@ -1,1 +1,159 @@
-
+{
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "unit_name": "tier_1_cannon_build",
+    "display_name": "!LOC:tier_1_cannon_build",
+    "description": "!LOC:tier_1_cannon_build.",
+    "max_health": 10,
+    "build_metal_cost": 600,
+    "unit_types": [
+        "UNITTYPE_Important",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_LaserPlatform",
+        "UNITTYPE_Basic",
+        "UNITTYPE_Defense",
+        "UNITTYPE_Custom3",
+        "UNITTYPE_Custom4"
+    ],
+    "wreckage_health_frac": 0.0,
+    "death_weapon": {
+        "ground_ammo_spec": "/pa/units/addon/death_weapon/tier_1_death_weapon.json"
+    },
+    "passive_health_regen": -1000,
+    "spawn_unit_on_death": "/pa/units/addon/tier_1_cannon/tier_1_cannon.json",
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 110
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 110
+                }
+            ]
+        }
+    },
+    "navigation": {
+        "type": "land-small",
+        "acceleration": 100,
+        "brake": 100,
+        "move_speed": 10,
+        "turn_speed": 180,
+        "group_preference": "front"
+    },
+    "model": {
+        "filename": "/pa/units/addon/tier_1_cannon_build/tier_1_cannon_build.papa"
+    },
+    "events": {
+        "died": {
+            "audio_cue": "",
+            "effect_spec": "/pa/units/air/base_flyer/base_flyer_death.pfx",
+            "effect_scale": -1
+        }
+    },
+    "headlights": [
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                -8.1,
+                0.0,
+                10.58
+            ],
+            "orientation": [
+                45.0,
+                0.0,
+                0.0
+            ],
+            "near_width": 12.0,
+            "near_height": 12.0,
+            "near_distance": 5.0,
+            "far_distance": 20.0,
+            "color": [
+                1.5,
+                1.52,
+                1.6
+            ],
+            "intensity": 2.0,
+            "debug": false
+        }
+    ],
+    "lamps": [
+        {
+            "offset": [
+                -8.1,
+                0.0,
+                10.0
+            ],
+            "radius": 4.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 2.0
+        },
+        {
+            "offset": [
+                -8.1,
+                0.0,
+                11.4
+            ],
+            "radius": 4.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 2.0
+        },
+        {
+            "offset": [
+                12.63,
+                0.0,
+                9.15
+            ],
+            "radius": 8.0,
+            "color": [
+                0.1,
+                1.0,
+                0.1
+            ],
+            "intensity": 2.0
+        },
+        {
+            "offset": [
+                -15.47,
+                0.0,
+                9.94
+            ],
+            "radius": 4.0,
+            "color": [
+                1.0,
+                0.0,
+                0.0
+            ],
+            "intensity": 2.0
+        }
+    ],
+    "selection_icon": {
+        "diameter": 53
+    },
+    "mesh_bounds": [
+        29.5,
+        30.5,
+        15.2
+    ],
+    "placement_size": [
+        40,
+        55
+    ],
+    "TEMP_texelinfo": 38.3936,
+    "physics": {
+        "radius": 4.5
+    }
+}
